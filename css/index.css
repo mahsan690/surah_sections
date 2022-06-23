@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.main
+{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 20px 80px;
+    background-color: #1f2125;
+}
+.main h2:hover
+{
+    color: #fff;
+}
+.main h2
+{
+    width: fit-content;
+    font-size: 1..4em;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 400;
+    transition-duration:0.5s;
+}
+.main h2::before
+{
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    z-index: 10000;
+}
+.main h2:hover
+{
+    width: 100%;
+}
+
+.main .all_surahs::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #464b50;
+    top: -38.5px;
+}
+.main .all_surahs
+{
+    width: 100%;
+    position: relative;
+    /* height: 100vh; */
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.main .all_surahs .surah_card
+{
+    width: 390px;
+    height: 80px;
+    border: 1px solid #464b50;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.main .all_surahs .surah_card:hover
+{
+    border: 1px solid #22a5ad;
+}
+.main .all_surahs .surah_card .surah
+{
+    /* width: 70%; */
+    height: 100%;    
+    /* border: 1px solid white; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+.main .all_surahs .surah_card .surah .surah_no
+{
+    height: 65px;
+    width: 65px;
+    background-color: #464b50;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+.main .all_surahs .surah_card:hover .surah_no
+{
+    background-color: #22a5ad;
+}
+.main .all_surahs .surah_card .surah .surah_no h3
+{
+    font-size: 16   px;
+    font-weight: 400
+}
+
+.main .all_surahs .surah_card .surah .surah_no h3
+{
+    color: #fff;
+}
+
+.main .all_surahs .surah_card .surah .surah_name{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.main .all_surahs .surah_card .surah .surah_name h1
+{
+    color: #fff;
+    font-weight: 300;
+    /* margin-bottom: 0px; */
+    font-size: 18px;    
+}
+.main .all_surahs .surah_card .surah .surah_name h4
+{
+    font-size: 14px;
+    margin-top: 3px;
+    color: #777;
+    transition-duration: 0.4s;
+    font-weight: 500;
+}
+.main .all_surahs .surah_card:hover .surah .surah_name h4
+{
+    color: #22a5ad;
+}
+
+.main .all_surahs .surah_card .surah_arabic
+{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.main .all_surahs .surah_card .surah_arabic h1
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;  
+}
+.main .all_surahs .surah_card .surah_arabic h4
+{
+    font-size: 14px;
+    margin-top: 3px;
+    color: #777;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.main .all_surahs .surah_card:hover .surah_arabic h4
+{
+    color: #22a5ad;
+}
